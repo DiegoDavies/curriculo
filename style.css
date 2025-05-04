@@ -186,7 +186,7 @@ section h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #38bdf8;
+    background: #007bff;
     color: #0f172a;
     border: none;
     padding: 10px;
@@ -233,17 +233,6 @@ body.light-mode .menu-toggle {
     color: #38bdf8 !important;
 }
 
-@media (max-width: 600px) {
-    .skills {
-        justify-content: center;
-    }
-
-    .skill {
-        width: 100px;
-        height: 90px;
-    }
-}
-
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -255,7 +244,8 @@ body.light-mode .menu-toggle {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
+
     .menu-toggle {
         display: block;
     }
@@ -284,6 +274,17 @@ body.light-mode .menu-toggle {
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        justify-content: center;
+    }
+
+    .skill {
+        width: 100px;
+        height: 90px;
+    }
 
     header h1 {
         font-size: 1.8rem;
@@ -297,6 +298,11 @@ body.light-mode .menu-toggle {
     header>div {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -361,4 +367,42 @@ body.light-mode .menu-toggle {
     filter: brightness(1.1) contrast(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     background-color: #fff;
+}
+
+/* Rodapé */
+footer {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-texts {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Estilo para o botão no rodapé */
+.footer-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #2563eb;
 }
