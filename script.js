@@ -34,10 +34,10 @@ themeToggle.addEventListener('click', toggleTheme);
 themeToggleMobile.addEventListener('click', toggleTheme);
 
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
-  html.classList.remove('dark');
-  themeToggle.classList.add('light');
-  themeToggleMobile.classList.add('light');
+if (savedTheme === 'dark') {
+  html.classList.add('dark');
+  themeToggle.classList.remove('light');
+  themeToggleMobile.classList.remove('light');
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
