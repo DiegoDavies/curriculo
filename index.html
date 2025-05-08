@@ -19,6 +19,7 @@
         gtag('config', 'G-E5RB8BY4LQ');
       });
     </script>
+
     <link rel="shortcut icon" href="imagens/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,265 +40,845 @@
     <meta name="twitter:image" content="https://diegosousa.dev/imagens/DiegoSousaCurriculo.webp">
 
     <title>Diego Pinto de Sousa | Currículo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script src="scripthead.js" defer></script>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="menu-toggle" id="menuToggle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path d="M0 88C0 74.7 10.7 64 24 64l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 112C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 272c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24L24 432c-13.3 0-24-10.7-24-24s10.7-24 24-24l400 0c13.3 0 24 10.7 24 24z" /></svg>
-      </div>
-      <nav>
-        <ul id="navMenu">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#formacao">Formação</a></li>
-          <li><a href="#recomendacoes">Recomendações</a></li>
-          <li><a href="#setup">Setup</a></li>
-          <li><a href="https://studio.diegosousa.dev" target="_blank" rel="noopener noreferrer">Contrate meu Estúdio</a> </li>
-        </ul>
-      </nav>
-      <button class="theme-toggle" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path d="M464 256c0-114.9-93.1-208-208-208l0 416c114.9 0 208-93.1 208-208zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" /></svg> Tema</button>
-    </div>
+  <body class="bg-gray-50 dark:bg-dark text-gray-800 dark:text-dark">
+    <!-- Navbar -->
+    <header class="fixed w-full bg-white dark:bg-dark-card bg-opacity-95 dark:bg-opacity-95 nav-shadow z-50 transition-all duration-300" id="navbar">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <a href="#" class="text-2xl font-bold text-primary-dark dark:text-primary-light">DPS<span class="text-blue-500">.</span></a>
 
-    <header id="inicio">
-      <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 40px;">
-        <div style="text-align: left;">
-          <h1>Diego Pinto de Sousa</h1>
-          <p>Líder Técnico & Desenvolvedor Full-Stack</p>
-          <div class="buttons">
-            <a href="https://www.linkedin.com/in/diegopintosousa/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" /></svg> LinkedIn</a>
-            <a href="arquivos/Curriculo.pdf" download><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" /></svg> Baixar Currículo</a>
-            <a href="arquivos/Carta de recomendação.pdf" download><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" /></svg> Carta de Recomendação</a>
-          </div>
-          <div class="contact">
-            <a href="mailto:diego_psousa@hotmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" /></svg> diego_psousa@hotmail.com</a>
-            <a href="https://wa.me/5519993025028" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" /></svg> WhatsApp</a>
+          <nav class="hidden md:flex items-center space-x-8">
+            <ul class="flex space-x-8">
+              <li><a href="#sobre" class="text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Sobre</a></li>
+              <li><a href="#experiencia" class="text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Experiência</a></li>
+              <li><a href="#habilidades" class="text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Habilidades</a></li>
+              <li><a href="#recomendacoes" class="text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Recomendações</a></li>
+              <li><a href="#setup" class="text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Setup</a></li>
+              <li><a href="#contato" class="text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Contato</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-all">
+              <!-- Sol (tema claro) -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden dark:block text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <!-- Lua (tema escuro) -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            </button>
+          </nav>
+
+          <div class="md:hidden flex items-center space-x-4">
+            <button id="theme-toggle-mobile" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-all">
+              <!-- Sol (tema claro) -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden dark:block text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <!-- Lua (tema escuro) -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            </button>
+
+            <button class="text-gray-700 dark:text-gray-300" id="mobile-menu-button">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="profile-picture">
-          <img src="imagens/Selfie.webp" alt="Foto de Diego Pinto de Sousa" width="140" height="140" loading="lazy">
+      </div>
+
+      <!-- Menu mobile -->
+      <div class="md:hidden hidden bg-white dark:bg-dark-card w-full absolute top-full left-0 shadow-md" id="mobile-menu">
+        <div class="container mx-auto px-4 py-3">
+          <ul class="space-y-3">
+            <li><a href="#sobre" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Sobre</a></li>
+            <li><a href="#experiencia" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Experiência</a></li>
+            <li><a href="#habilidades" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Habilidades</a></li>
+            <li><a href="#recomendacoes" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Recomendações</a></li>
+            <li><a href="#setup" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Setup</a></li>
+            <li><a href="#contato" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors">Contato</a></li>
+          </ul>
         </div>
       </div>
     </header>
 
-    <button id="scrollToTop" class="scroll-top" title="Voltar ao topo">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-        <path d="M209.4 39.4C204.8 34.7 198.6 32 192 32s-12.8 2.7-17.4 7.4l-168 176c-9.2 9.6-8.8 24.8 .8 33.9s24.8 8.8 33.9-.8L168 115.9 168 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-340.1L342.6 248.6c9.2 9.6 24.3 9.9 33.9 .8s9.9-24.3 .8-33.9l-168-176z" /></svg>
-    </button>
-
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Sou Líder Técnico com quase 10 anos de experiência em desenvolvimento de software. Tenho expertise em
-        projetos full-stack utilizando C#, .NET Framework/Core, SQL Server, HTML, CSS, JavaScript e Azure. Ao longo
-        da minha trajetória, atuei com integrações complexas, migrações de sistemas legados e liderança de equipes
-        técnicas.</p>
-      <p>Minha missão é alinhar tecnologia a objetivos de negócio, com foco em qualidade de código, entrega contínua
-        e boas práticas. Acredito no poder da colaboração e gosto de transformar problemas técnicos em soluções
-        robustas e sustentáveis. Estou sempre em busca de evoluir e contribuir com times de alta performance.</p>
-    </section>
-
-    <section id="habilidades">
-      <h2>Habilidades Técnicas</h2>
-
-      <h3>💻 Front-End</h3>
-      <div class="skills">
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="40"><br>HTML</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="40"><br>CSS</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40"><br>JavaScript</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" width="40"><br>jQuery</div>
-      </div>
-
-      <h3>🧠 Back-End</h3>
-      <div class="skills">
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="40"><br>C#</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET Core" width="40"><br>.NET Core</div>
-      </div>
-
-      <h3>🗄️ Banco de Dados</h3>
-      <div class="skills">
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" width="40"><br>SQL Server</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="40"><br>MySQL</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40"><br>PostgreSQL</div>
-      </div>
-
-      <h3>☁️ Cloud & DevOps</h3>
-      <div class="skills">
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" width="40"><br>Azure</div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="40"><br>DevOps</div>
-      </div>
-    </section>
-
-    <section id="experiencia">
-      <h2>Experiência Profissional</h2>
-
-      <div class="experience-card">
-        <h3><a href="https://www.linkedin.com/company/membrani/" target="_blank">Membran-i <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h3>
-        <div class="experience-card">
-          <h4>Full-Stack Developer | Líder Técnico</h4>
-          <p><strong class="data-experiencia" data-inicio="2021-04"></strong></p>
-          <p>Liderança técnica de time de desenvolvedores em ambiente ágil</p>
-          <p>Desenvolvimento full-stack com C#, .NET (Framework/Core), SQL Server e Azure</p>
-          <p>Manutenção e evolução de sistema legado crítico para a operação</p>
-          <p>Implementação de novas funcionalidades e melhorias arquiteturais</p>
-          <p>Controle de versionamento e qualidade de código com Azure DevOps</p>
-          <p>Redução de retrabalho em 40% com padronização de código</p>
+    <!-- Hero Section -->
+    <section class="gradient-bg-light dark:gradient-bg-dark text-white pt-28 pb-16">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Diego Pinto de Sousa</h1>
+          <h2 class="text-xl md:text-2xl mb-6">Líder Técnico & Desenvolvedor Full-Stack</h2>
+          <p class="text-lg mb-8 text-blue-100">Crio aplicações modernas que resolvem problemas reais, com arquitetura sólida e foco em resultado.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://www.linkedin.com/in/diegopintosousa/" target="_blank" class="bg-white text-primary-dark font-medium py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="arquivos/Curriculo.pdf" download class="bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 transition-all flex items-center">
+              <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" /></svg>
+              Baixar Currículo
+            </a>
+            <a href="arquivos/Carta de recomendação.pdf" download class="bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 transition-all flex items-center">
+              <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" /></svg>
+              Carta de Recomendação
+            </a>
+          </div>
         </div>
-        <div class="experience-card">
-          <h4>Full-Stack Developer</h4>
-          <p><strong class="data-experiencia" data-inicio="2020-11" data-fim="2021-04">nov de 2020 - abr de 2021 · 6 meses</strong></p>
-          <p>Desenvolvimento e manutenção de APIs utilizando Azure DevOps, Git e controle de versão</p>
-        </div>
-      </div>
-
-      <div class="experience-card">
-        <h3><a href="https://www.linkedin.com/company/bsource/" target="_blank">BSource <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h3>
-        <div class="experience-card">
-          <h4>Programador Pleno II</h4>
-          <p><strong class="data-experiencia" data-inicio="2018-12" data-fim="2020-11">dez de 2018 - nov de 2020 · 2 anos</strong></p>
-          <p>Desenvolvimento back-end com C# (.NET Framework, .NET Core), APIs RESTful, Entity Framework e Dapper
-          </p>
-          <p>Criação de aplicações front-end com Javascript, HTML, ExtJS (Sencha) e Angular</p>
-          <p>Integrações com bancos de dados como SQL Server, MySQL, Oracle e Postgres</p>
-          <p>Participação em times ágeis com foco em entregas contínuas e suporte a aplicações em produção</p>
-          <p>Consolidação de integrações críticas com múltiplos bancos de dados</p>
-          <p>Reconhecimento interno pela confiabilidade nas entregas e suporte técnico</p>
-        </div>
-        <div class="experience-card">
-          <h4>Programador Júnior</h4>
-          <p><strong class="data-experiencia" data-inicio="2017-08" data-fim="2018-12">ago de 2017 - dez de 2018 · 1 ano 5 meses</strong></p>
-          <p>Desenvolvimento de APIs e manutenção de sistemas utilizando .NET</p>
-        </div>
-      </div>
-
-      <div class="experience-card">
-        <h3><a href="https://www.linkedin.com/company/vd-tecnologia/" target="_blank">VD Tecnologia <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h3>
-        <div class="experience-card">
-          <h4>Programador Júnior</h4>
-          <p><strong class="data-experiencia" data-inicio="2016-05" data-fim="2017-08">mai de 2016 - jul de 2017 · 1 ano 3 meses</strong></p>
-          <p>Desenvolvimento de softwares utilizando C# e FoxPro</p>
-          <p>Projetos de migração de dados entre sistemas (SAGE e outros)</p>
-          <p>Experiência com bancos SQL Server, MySQL, Oracle, Firebase, Postgres</p>
-          <p>Desenvolvimento de scripts de migração reutilizáveis</p>
-        </div>
-        <div class="experience-card">
-          <h4>Estagiário em Desenvolvimento</h4>
-          <p><strong class="data-experiencia" data-inicio="2015-05" data-fim="2016-05">mai de 2015 - mai de 2016 · 1 ano 1 mês</strong></p>
-          <p>Suporte ao desenvolvimento e rotinas de migração de dados</p>
+        <div class="md:w-1/2 flex justify-center">
+          <div class="relative animate-float">
+            <div class="absolute inset-0 bg-primary-dark dark:bg-primary-light rounded-full opacity-20 blur-xl transform -translate-x-4 translate-y-4"></div>
+            <div class="w-64 h-64 bg-gradient-to-r from-blue-500 to-primary-dark dark:from-blue-600 dark:to-primary-light rounded-full border-4 border-white dark:border-gray-800 shadow-xl relative z-10 flex items-center justify-center">
+              <img src="imagens/Selfie.webp" alt="Foto de Diego Pinto de Sousa" class="text-white w-full h-full rounded-full object-cover" loading="lazy">
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="formacao">
-      <h2>Formação Acadêmica</h2>
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-16 dark:bg-dark">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Sobre Mim</h2>
 
-      <div class="experience-card">
-        <h4>Engenharia de Inteligência Artificial</h4>
-        <p><strong>Data Science Academy · 2025 – Em andamento</strong></p>
-      </div>
-      <div class="experience-card">
-        <h4>Bacharelado em Sistemas de Informação</h4>
-        <p><strong>Centro Universitário Salesiano de São Paulo · 2015 – 2018</strong></p>
-      </div>
-      <div class="experience-card">
-        <h4>Técnico de Informática</h4>
-        <p><strong>Colégio Network · 2012 – 2014</strong></p>
-      </div>
-    </section>
+        <div class="bg-white dark:bg-dark-card rounded-xl shadow-md overflow-hidden">
+          <div class="md:flex">
+            <div class="md:w-1/3 primary-gradient-light dark:primary-gradient-dark p-8 text-white">
+              <h3 class="text-2xl font-semibold mb-4">Perfil Profissional</h3>
+              <p class="mb-6">Líder Técnico & Desenvolvedor Full-Stack com quase 10 anos de experiência.</p>
 
-    <section id="recomendacoes">
-      <h2>Recomendações</h2>
-      <div class="testimonial">
-        <h4><a href="https://www.linkedin.com/in/paulorenatosouza/" target="_blank">Paulo Renato de Souza Santos <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a>
-        </h4>
-        <p>Diego é um desenvolvedor excepcional em projetos .NET, Cloud, com experiência com inteligência
-          artificial, além de ótimo líder técnico. Sua compreensão técnica, combinada com uma abordagem
-          colaborativa, promove uma cultura de aprendizado constante na equipe. Diego se destaca na adoção de
-          práticas ágeis e na garantia da segurança das soluções, sendo essencial para equipes que buscam
-          excelência na implementação de IA em ambientes .NET.</p>
-      </div>
-      <div class="testimonial">
-        <h4><a href="https://www.linkedin.com/in/florentdesiderio/" target="_blank">Florent Desidério <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
-        <p>Como desenvolvedor fullstack, Diego se destaca pela rapidez de execução e a qualidade do código entregue.
-          Como pessoa, Diego sabe colaborar para ajudar os demais e melhorar o seu trabalho, sempre atuando com
-          respeito, calma e camaradagem.
-          Apesar de jovem, Diego se mostra responsável, maduro, com grande experiência e sempre buscando soluções
-          fora da caixa.
-          Obrigado por estar conosco nesta jornada de startup!!</p>
-      </div>
-      <div class="testimonial">
-        <h4><a href="https://www.linkedin.com/in/leonardo-longhi/" target="_blank">Leonardo Longhi <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
-        <p>Desde os melhores alunos da Faculdade até os melhores profissionais dos projetos em que participamos,
-          tive o prazer de compatilhar experiencia profissional com o Diego por quase 5 anos em 3 empresas em que
-          atuamos juntos.
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-medium mb-1">Nome</h4>
+                  <p>Diego Pinto de Sousa</p>
+                </div>
+                <div>
+                  <h4 class="font-medium mb-1">Email</h4>
+                  <p>diego_psousa@hotmail.com</p>
+                </div>
+                <div>
+                  <h4 class="font-medium mb-1">Telefone</h4>
+                  <p>(19) 99302-5028</p>
+                </div>
+                <div>
+                  <h4 class="font-medium mb-1">Localização</h4>
+                  <p>Americana, São Paulo, Brasil</p>
+                </div>
+              </div>
 
-          Diego sempre foi um profissional inspirador, pronto para superar desafios e atuar em soluções complexas
-          com facilidade, dividir equipe com ele foi uma experiência transformadora, pois sua dedicação, expertise
-          e paixão pelo que faz são verdadeiramente notáveis.
+              <div class="mt-8 flex space-x-4">
+                <a href="https://www.linkedin.com/in/diegopintosousa/" target="_blank" class="text-white hover:text-blue-200 transition-colors">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/diego__davies/" target="_blank" class="text-white hover:text-blue-200 transition-colors">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
 
-          Não tenho dúvidas em recomendar Diego como um excelente desenvolvedor, líder técnico e, acima de tudo,
-          um mestre na resolução de problemas.</p>
-      </div>
-    </section>
+            <div class="md:w-2/3 p-8 dark:bg-dark-card">
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Quem sou eu</h3>
 
-    <section id="setup">
-      <h2>Meu Setup</h2>
-      <div class="setup-gallery">
-        <img src="imagens/MeuSetup.webp" alt="Foto do Setup Profissional" loading="lazy">
-        <div class="setup-description">
-          Como profissional de tecnologia, acredito que um ambiente de trabalho eficiente impacta diretamente na
-          produtividade e qualidade das entregas. Montei meu setup pensando em performance, conforto e
-          organização.
-          Abaixo, compartilho um pouco da estrutura que utilizo no meu dia a dia:
-        </div>
-        <div class="setup-specs">
-          <h3>Configuração:</h3>
-          <ul>
-            <li>Processador Ryzen 9 9900x</li>
-            <li>Placa Mãe Asus TUF Gaming B650-Plus WIFI</li>
-            <li>64GB RAM Kingston Fury</li>
-            <li>Placa de Vídeo RTX 4070 Super</li>
-            <li>Fonte XPG 850W Core Reactor II</li>
-            <li>Water Cooler Asus TUF Gaming 240mm</li>
-            <li>SSD 2TB</li>
-            <li>Monitor Principal Superframe 32"</li>
-            <li>Monitor Secundário LG 26" UltraWide</li>
-            <li>Teclado Logitech G915 TKL</li>
-            <li>Mouse Logitech Pro X Superlight</li>
-            <li>Headset Logitech G733</li>
-          </ul>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">Sou Líder Técnico com quase 10 anos de experiência em desenvolvimento de software, atuando em soluções corporativas e produtos digitais de ponta. Tenho expertise em projetos full-stack utilizando C#, .NET Framework/Core, SQL Server, HTML, CSS, JavaScript e Azure.</p>
+
+              <p class="text-gray-600 dark:text-gray-300 mb-4">Ao longo da minha trajetória, participei de todas as fases do ciclo de desenvolvimento: desde a arquitetura de sistemas e definição de soluções até a entrega em produção. Atuei com integrações complexas entre sistemas legados e modernos, liderando iniciativas de refatoração e modernização tecnológica.</p>
+
+              <p class="text-gray-600 dark:text-gray-300 mb-4">Tenho experiência na liderança de equipes técnicas multidisciplinares, promovendo boas práticas, revisão de código e cultura DevOps. Gosto de apoiar o time com visão estratégica, mentoria e foco em qualidade contínua.</p>
+
+              <p class="text-gray-600 dark:text-gray-300 mb-4">Minha missão é alinhar tecnologia aos objetivos do negócio, entregando valor com excelência técnica, sustentabilidade e escalabilidade. Acredito no poder da colaboração e da comunicação clara para construir soluções robustas, mantendo um ambiente de trabalho produtivo e inspirador.</p>
+
+              <p class="text-gray-600 dark:text-gray-300 mb-4">Estou sempre em busca de evoluir, aprender com novos desafios e contribuir com times de alta performance.</p>
+
+              <div class="flex flex-wrap gap-3 mt-6">
+                <span class="bg-blue-100 dark:bg-blue-900 text-primary-dark dark:text-blue-200 text-sm font-medium px-3 py-1 rounded-full">C#</span>
+                <span class="bg-blue-100 dark:bg-blue-900 text-primary-dark dark:text-blue-200 text-sm font-medium px-3 py-1 rounded-full">.NET Core</span>
+                <span class="bg-blue-100 dark:bg-blue-900 text-primary-dark dark:text-blue-200 text-sm font-medium px-3 py-1 rounded-full">SQL Server</span>
+                <span class="bg-blue-100 dark:bg-blue-900 text-primary-dark dark:text-blue-200 text-sm font-medium px-3 py-1 rounded-full">HTML/CSS</span>
+                <span class="bg-blue-100 dark:bg-blue-900 text-primary-dark dark:text-blue-200 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                <span class="bg-blue-100 dark:bg-blue-900 text-primary-dark dark:text-blue-200 text-sm font-medium px-3 py-1 rounded-full">Azure</span>
+                <span class="bg-blue-100 dark:bg-blue-900 text-primary-dark dark:text-blue-200 text-sm font-medium px-3 py-1 rounded-full">DevOps</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer>
-      <div class="footer-content">
-        <img src="imagens/Logo_branco_png.png" alt="Logo Studio Diego Sousa" loading="lazy" height="45"/>
-        <div class="footer-texts">
-          <p>© 2025 Currículo Diego Pinto de Sousa. Todos os direitos reservados.</p>
-          <p>Desenvolvido por Studio Diego Sousa.</p>
+    <!-- Experiência Section -->
+    <section id="experiencia" class="py-16 bg-gray-50 dark:bg-dark">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Experiência Profissional</h2>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="relative">
+            <div class="experience-line"></div>
+
+            <!-- Experiência 1 -->
+            <div class="relative pl-10 pb-12">
+              <div class="experience-dot absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-primary-dark dark:border-primary-light bg-white dark:bg-dark-card flex items-center justify-center">
+                <div class="w-3 h-3 bg-primary-dark dark:bg-primary-light rounded-full"></div>
+              </div>
+
+              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md">
+                <div class="flex flex-wrap justify-between items-start mb-2">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Full-Stack Developer | Líder Técnico</h3>
+                  <span class="bg-primary-dark dark:bg-primary-light text-white dark:text-dark text-xs font-bold px-3 py-1 rounded-full"><strong class="data-experiencia" data-inicio="2021-04" data-fim="2025-04"></strong></span>
+                </div>
+                <h4 class="text-lg text-primary-dark dark:text-primary-light mb-4"><a href="https://www.linkedin.com/company/membrani/" target="_blank">Membran-i <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Liderança técnica de time de desenvolvedores em ambiente ágil <br />
+                  Desenvolvimento full-stack com C#, .NET (Framework/Core), SQL Server e Azure <br />
+                  Manutenção e evolução de sistema legado crítico para a operação <br />
+                  Implementação de novas funcionalidades e melhorias arquiteturais <br />
+                  Controle de versionamento e qualidade de código com Azure DevOps <br />
+                  Redução de retrabalho em 40% com padronização de código</p>
+              </div>
+            </div>
+
+            <!-- Experiência 2 -->
+            <div class="relative pl-10 pb-12">
+              <div class="experience-dot absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-primary-dark dark:border-primary-light bg-white dark:bg-dark-card flex items-center justify-center">
+                <div class="w-3 h-3 bg-primary-dark dark:bg-primary-light rounded-full"></div>
+              </div>
+
+              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md">
+                <div class="flex flex-wrap justify-between items-start mb-2">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Full-Stack Developer</h3>
+                  <span class="bg-primary-dark dark:bg-primary-light text-white dark:text-dark text-xs font-bold px-3 py-1 rounded-full"><strong class="data-experiencia" data-inicio="2020-11" data-fim="2021-04"></strong></span>
+                </div>
+                <h4 class="text-lg text-primary-dark dark:text-primary-light mb-4"><a href="https://www.linkedin.com/company/membrani/" target="_blank">Membran-i <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Desenvolvimento e manutenção de APIs utilizando Azure DevOps, Git e controle de versão</p>
+              </div>
+            </div>
+
+            <!-- Experiência 3 -->
+            <div class="relative pl-10 pb-12">
+              <div class="experience-dot absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-primary-dark dark:border-primary-light bg-white dark:bg-dark-card flex items-center justify-center">
+                <div class="w-3 h-3 bg-primary-dark dark:bg-primary-light rounded-full"></div>
+              </div>
+
+              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md">
+                <div class="flex flex-wrap justify-between items-start mb-2">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Programador Pleno II</h3>
+                  <span class="bg-primary-dark dark:bg-primary-light text-white dark:text-dark text-xs font-bold px-3 py-1 rounded-full"><strong class="data-experiencia" data-inicio="2018-12" data-fim="2020-11"></strong></span>
+                </div>
+                <h4 class="text-lg text-primary-dark dark:text-primary-light mb-4"><a href="https://www.linkedin.com/company/bsource/" target="_blank">BSource <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Desenvolvimento back-end com C# (.NET Framework, .NET Core), APIs RESTful, Entity Framework e Dapper <br />
+                  Criação de aplicações front-end com Javascript, HTML, ExtJS (Sencha) e Angular <br />
+                  Integrações com bancos de dados como SQL Server, MySQL, Oracle e Postgres <br />
+                  Participação em times ágeis com foco em entregas contínuas e suporte a aplicações em produção <br />
+                  Consolidação de integrações críticas com múltiplos bancos de dados <br />
+                  Reconhecimento interno pela confiabilidade nas entregas e suporte técnico</p>
+              </div>
+            </div>
+
+            <!-- Experiência 4 -->
+            <div class="relative pl-10 pb-12">
+              <div class="experience-dot absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-primary-dark dark:border-primary-light bg-white dark:bg-dark-card flex items-center justify-center">
+                <div class="w-3 h-3 bg-primary-dark dark:bg-primary-light rounded-full"></div>
+              </div>
+
+              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md">
+                <div class="flex flex-wrap justify-between items-start mb-2">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Programador Júnior</h3>
+                  <span class="bg-primary-dark dark:bg-primary-light text-white dark:text-dark text-xs font-bold px-3 py-1 rounded-full"><strong class="data-experiencia" data-inicio="2017-08" data-fim="2018-12"></strong></span>
+                </div>
+                <h4 class="text-lg text-primary-dark dark:text-primary-light mb-4"><a href="https://www.linkedin.com/company/bsource/" target="_blank">BSource <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Desenvolvimento de APIs e manutenção de sistemas utilizando .NET</p>
+              </div>
+            </div>
+
+            <!-- Experiência 5 -->
+            <div class="relative pl-10 pb-12">
+              <div class="experience-dot absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-primary-dark dark:border-primary-light bg-white dark:bg-dark-card flex items-center justify-center">
+                <div class="w-3 h-3 bg-primary-dark dark:bg-primary-light rounded-full"></div>
+              </div>
+
+              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md">
+                <div class="flex flex-wrap justify-between items-start mb-2">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Programador Júnior</h3>
+                  <span class="bg-primary-dark dark:bg-primary-light text-white dark:text-dark text-xs font-bold px-3 py-1 rounded-full"><strong class="data-experiencia" data-inicio="2016-05" data-fim="2017-08"></strong></span>
+                </div>
+                <h4 class="text-lg text-primary-dark dark:text-primary-light mb-4"><a href="https://www.linkedin.com/company/vd-tecnologia/" target="_blank">VD Tecnologia <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Desenvolvimento de softwares utilizando C# e FoxPro <br />
+                  Projetos de migração de dados entre sistemas (SAGE e outros) <br />
+                  Experiência com bancos SQL Server, MySQL, Oracle, Firebase, Postgres <br />
+                  Desenvolvimento de scripts de migração reutilizáveis</p>
+              </div>
+            </div>
+
+            <!-- Experiência 6 -->
+            <div class="relative pl-10 pb-12">
+              <div class="experience-dot absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-primary-dark dark:border-primary-light bg-white dark:bg-dark-card flex items-center justify-center">
+                <div class="w-3 h-3 bg-primary-dark dark:bg-primary-light rounded-full"></div>
+              </div>
+
+              <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md">
+                <div class="flex flex-wrap justify-between items-start mb-2">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Estagiário em Desenvolvimento</h3>
+                  <span class="bg-primary-dark dark:bg-primary-light text-white dark:text-dark text-xs font-bold px-3 py-1 rounded-full"><strong class="data-experiencia" data-inicio="2015-05" data-fim="2016-05"></strong></span>
+                </div>
+                <h4 class="text-lg text-primary-dark dark:text-primary-light mb-4"><a href="https://www.linkedin.com/company/vd-tecnologia/" target="_blank">VD Tecnologia <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Suporte ao desenvolvimento e rotinas de migração de dados</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="https://studio.diegosousa.dev" target="_blank" class="footer-button">Visite nosso site</a>
+      </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section id="habilidades" class="py-16 dark:bg-dark">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Habilidades Técnicas</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Categoria Frontend -->
+          <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-4 text-primary-dark dark:text-primary-light">Frontend</h3>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">HTML/CSS</span>
+                  <span class="dark:text-white">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">JavaScript</span>
+                  <span class="dark:text-white">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">jQuery</span>
+                  <span class="dark:text-white">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">Vue.js</span>
+                  <span class="dark:text-white">20%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 20%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categoria Backend -->
+          <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-4 text-primary-dark dark:text-primary-light">Backend</h3>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">C#</span>
+                  <span class="dark:text-white">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">.NET Core</span>
+                  <span class="dark:text-white">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">SQL Server</span>
+                  <span class="dark:text-white">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">MySQL/PostgreSQL</span>
+                  <span class="dark:text-white">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categoria Cloud & DevOps -->
+          <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-4 text-primary-dark dark:text-primary-light">Cloud & DevOps</h3>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">Azure</span>
+                  <span class="dark:text-white">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">DevOps</span>
+                  <span class="dark:text-white">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 80%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">CI/CD</span>
+                  <span class="dark:text-white">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium dark:text-white">Git/GitHub</span>
+                  <span class="dark:text-white">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-primary-dark dark:bg-primary-light h-2 rounded-full skill-bar" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recomendações Section -->
+    <section id="recomendacoes" class="py-16 bg-gray-50 dark:bg-dark">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Recomendações</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Recomendação 1 -->
+          <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md recommendation-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary-dark dark:bg-primary-light rounded-full flex items-center justify-center text-white text-xl font-bold">
+                PS
+              </div>
+              <div class="ml-4">
+                <h4 class="font-semibold text-gray-800 dark:text-white"><a href="https://www.linkedin.com/in/paulorenatosouza/" target="_blank">Paulo Renato de Souza Santos <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Product Owner</p>
+              </div>
+            </div>
+
+            <p class="text-gray-600 dark:text-gray-300 italic">
+              "Diego é um desenvolvedor excepcional em projetos .NET, Cloud, com experiência com inteligência
+              artificial, além de ótimo líder técnico. Sua compreensão técnica, combinada com uma abordagem
+              colaborativa, promove uma cultura de aprendizado constante na equipe. Diego se destaca na adoção de
+              práticas ágeis e na garantia da segurança das soluções, sendo essencial para equipes que buscam
+              excelência na implementação de IA em ambientes .NET."
+            </p>
+          </div>
+
+          <!-- Recomendação 2 -->
+          <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md recommendation-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                FD
+              </div>
+              <div class="ml-4">
+                <h4 class="font-semibold text-gray-800 dark:text-white"><a href="https://www.linkedin.com/in/florentdesiderio/" target="_blank">Florent Desidério <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Founder & CEO Membran-i</p>
+              </div>
+            </div>
+
+            <p class="text-gray-600 dark:text-gray-300 italic">
+              "Como desenvolvedor fullstack, Diego se destaca pela rapidez de execução e a qualidade do código entregue.
+              Como pessoa, Diego sabe colaborar para ajudar os demais e melhorar o seu trabalho, sempre atuando com
+              respeito, calma e camaradagem.
+              Apesar de jovem, Diego se mostra responsável, maduro, com grande experiência e sempre buscando soluções
+              fora da caixa.
+              Obrigado por estar conosco nesta jornada de startup!!"
+            </p>
+          </div>
+
+          <!-- Recomendação 3 -->
+          <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md recommendation-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                LL
+              </div>
+              <div class="ml-4">
+                <h4 class="font-semibold text-gray-800 dark:text-white"><a href="https://www.linkedin.com/in/leonardo-longhi/" target="_blank">Leonardo Longhi <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                      <path d="M580.3 267.2c56.2-56.2 56.2-147.3 0-203.5C526.8 10.2 440.9 7.3 383.9 57.2l-6.1 5.4c-10 8.7-11 23.9-2.3 33.9s23.9 11 33.9 2.3l6.1-5.4c38-33.2 95.2-31.3 130.9 4.4c37.4 37.4 37.4 98.1 0 135.6L433.1 346.6c-37.4 37.4-98.2 37.4-135.6 0c-35.7-35.7-37.6-92.9-4.4-130.9l4.7-5.4c8.7-10 7.7-25.1-2.3-33.9s-25.1-7.7-33.9 2.3l-4.7 5.4c-49.8 57-46.9 142.9 6.6 196.4c56.2 56.2 147.3 56.2 203.5 0L580.3 267.2zM59.7 244.8C3.5 301 3.5 392.1 59.7 448.2c53.6 53.6 139.5 56.4 196.5 6.5l6.1-5.4c10-8.7 11-23.9 2.3-33.9s-23.9-11-33.9-2.3l-6.1 5.4c-38 33.2-95.2 31.3-130.9-4.4c-37.4-37.4-37.4-98.1 0-135.6L207 165.4c37.4-37.4 98.1-37.4 135.6 0c35.7 35.7 37.6 92.9 4.4 130.9l-5.4 6.1c-8.7 10-7.7 25.1 2.3 33.9s25.1 7.7 33.9-2.3l5.4-6.1c49.9-57 47-142.9-6.5-196.5c-56.2-56.2-147.3-56.2-203.5 0L59.7 244.8z" /></svg></a></h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Desenvolvedor Senior</p>
+              </div>
+            </div>
+
+            <p class="text-gray-600 dark:text-gray-300 italic">
+              "Desde os melhores alunos da Faculdade até os melhores profissionais dos projetos em que participamos,
+              tive o prazer de compatilhar experiencia profissional com o Diego por quase 5 anos em 3 empresas em que
+              atuamos juntos.
+
+              Diego sempre foi um profissional inspirador, pronto para superar desafios e atuar em soluções complexas
+              com facilidade, dividir equipe com ele foi uma experiência transformadora, pois sua dedicação, expertise
+              e paixão pelo que faz são verdadeiramente notáveis.
+
+              Não tenho dúvidas em recomendar Diego como um excelente desenvolvedor, líder técnico e, acima de tudo,
+              um mestre na resolução de problemas."
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10 text-center">
+          <a href="https://www.linkedin.com/in/diegopintosousa/" target="_blank" class="inline-flex items-center bg-primary-dark dark:bg-primary-light text-white dark:text-dark font-medium py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            Ver mais recomendações no LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educação Section -->
+    <section id="educacao" class="py-16 bg-gray-50 dark:bg-dark">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Educação & Certificações</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Educação Formal -->
+          <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md">
+            <h3 class="text-xl font-semibold mb-6 text-primary-dark dark:text-primary-light">Educação Formal</h3>
+
+            <div class="space-y-6">
+              <div>
+                <div class="flex justify-between items-start mb-1">
+                  <h4 class="font-medium">Bacharelado em Sistemas de Informação</h4>
+                  <span class="text-sm text-gray-500 dark:text-gray-400">2015 – 2018</span>
+                </div>
+                <p class="text-primary-dark dark:text-primary-light">Centro Universitário Salesiano de São Paulo</p>
+              </div>
+
+              <div>
+                <div class="flex justify-between items-start mb-1">
+                  <h4 class="font-medium">Técnico de Informática</h4>
+                  <span class="text-sm text-gray-500 dark:text-gray-400">2012 – 2014</span>
+                </div>
+                <p class="text-primary-dark dark:text-primary-light">Colégio Network</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificações -->
+          <div class="bg-white dark:bg-dark-card p-6 rounded-xl shadow-md">
+            <h3 class="text-xl font-semibold mb-6 text-primary-dark dark:text-primary-light">Certificações</h3>
+
+            <div class="space-y-6">
+              <div>
+                <div class="flex justify-between items-start mb-1">
+                  <h4 class="font-medium">Engenharia de Inteligência Artificial</h4>
+                  <span class="text-sm text-gray-500 dark:text-gray-400">2025 – Em andamento</span>
+                </div>
+                <p class="text-primary-dark dark:text-primary-light">Data Science Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Setup Section -->
+    <section id="setup" class="py-16 dark:bg-dark">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Meu Setup</h2>
+
+        <div class="max-w-4xl mx-auto bg-white dark:bg-dark-card rounded-xl shadow-md overflow-hidden">
+          <div class="md:flex">
+            <div class="md:w-1/2">
+              <!-- SVG representando um setup de computador -->
+              <div class="h-full flex items-center justify-center p-6">
+                <img src="imagens/MeuSetup.webp" alt="Foto do Setup Profissional" class="rounded-xl" loading="lazy">
+              </div>
+            </div>
+
+            <div class="md:w-1/2 p-8">
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Ambiente de Trabalho</h3>
+
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Como profissional de tecnologia, acredito que um ambiente de trabalho eficiente impacta diretamente na produtividade e qualidade das entregas. Montei meu setup pensando em performance, conforto e organização. Abaixo, compartilho um pouco da estrutura que utilizo no meu dia a dia:
+              </p>
+
+              <h4 class="text-lg font-medium mb-3 text-gray-800 dark:text-white">Configuração:</h4>
+              <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Processador Ryzen 9 9900x</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Placa Mãe Asus TUF Gaming B650-Plus WIFI</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>64GB RAM Kingston Fury</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Placa de Vídeo RTX 4070 Super</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Fonte XPG 850W Core Reactor II</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Water Cooler Asus TUF Gaming 240mm</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>SSD 2TB</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Monitor Principal Superframe 32"</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Monitor Secundário LG 26" UltraWide</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Teclado Logitech G915 TKL</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Mouse Logitech Pro X Superlight</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 mr-2 text-primary-dark dark:text-primary-light flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7L352 176c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" /></svg>
+                  <span>Headset Logitech G733</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-16 bg-gray-50 dark:bg-dark">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Vamos Trabalhar Juntos</h2>
+
+        <div class="max-w-3xl mx-auto bg-white dark:bg-dark-card rounded-xl shadow-md overflow-hidden">
+          <div class="md:flex">
+            <div class="md:w-1/2 primary-gradient-light dark:primary-gradient-dark p-8 text-white">
+              <h3 class="text-2xl font-semibold mb-4">Informações de Contato</h3>
+              <p class="mb-6">Estou disponível para novos projetos e oportunidades. Entre em contato para conversarmos!</p>
+
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <svg class="w-6 h-6 mt-2 mr-3 text-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" /></svg>
+                  <div>
+                    <p class="text-blue-200 text-sm">Email</p>
+                    <a href="mailto:diego_psousa@hotmail.com" class="hover:underline">diego_psousa@hotmail.com</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <svg class="w-6 h-6 mt-2 mr-3 text-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" /></svg>
+                  <div>
+                    <p class="text-blue-200 text-sm">Telefone</p>
+                    <a href="tel:+5519993025028" class="hover:underline">(19) 99302-5028</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <svg class="w-6 h-6 mt-2 mr-3 text-blue-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z" /></svg>
+                  <div>
+                    <p class="text-blue-200 text-sm">Localização</p>
+                    <p>Americana, São Paulo, Brasil</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="text-lg font-medium mb-3">Me encontre nas redes</h4>
+                <div class="flex space-x-4">
+                  <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="text-white hover:text-blue-200 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/seu-perfil" target="_blank" class="text-white hover:text-blue-200 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:w-1/2 p-8">
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Envie uma mensagem</h3>
+
+              <form action="https://formsubmit.co/diego_psousa@hotmail.com" method="POST">
+                <div class="mb-4">
+                  <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nome</label>
+                  <input type="text" id="name" name="nome" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-primary-dark dark:focus:ring-primary-light focus:border-primary-dark dark:focus:border-primary-light bg-white dark:bg-gray-800 text-gray-800 dark:text-white">
+                </div>
+
+                <div class="mb-4">
+                  <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                  <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-primary-dark dark:focus:ring-primary-light focus:border-primary-dark dark:focus:border-primary-light bg-white dark:bg-gray-800 text-gray-800 dark:text-white">
+                </div>
+
+                <div class="mb-4">
+                  <label for="whatsapp" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">WhatsApp</label>
+                  <input type="tel" id="whatsapp" name="whatsapp" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-primary-dark dark:focus:ring-primary-light focus:border-primary-dark dark:focus:border-primary-light bg-white dark:bg-gray-800 text-gray-800 dark:text-white" placeholder="(11) 91234-5678" required oninput="formatarWhatsapp(event)" onkeypress="permitirSomenteNumeros(event)">
+                </div>
+
+                <div class="mb-4">
+                  <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Assunto</label>
+                  <input type="text" id="subject" name="_subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-primary-dark dark:focus:ring-primary-light focus:border-primary-dark dark:focus:border-primary-light bg-white dark:bg-gray-800 text-gray-800 dark:text-white">
+                </div>
+
+                <div class="mb-6">
+                  <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Mensagem</label>
+                  <textarea id="message" name="mensagem" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-primary-dark dark:focus:ring-primary-light focus:border-primary-dark dark:focus:border-primary-light bg-white dark:bg-gray-800 text-gray-800 dark:text-white"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-primary-dark dark:bg-primary-light hover:bg-blue-700 dark:hover:bg-blue-500 text-white dark:text-dark font-medium py-3 px-4 rounded-lg transition-colors">
+                  Enviar mensagem
+                </button>
+
+                <input type="hidden" name="_next" id="input-next">
+                <input type="hidden" name="_captcha" value="false">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          const inputNext = document.getElementById('input-next');
+          const baseUrl = window.location.origin;
+          inputNext.value = `${baseUrl}/obrigado.html`;
+        </script>
+
+        <div class="text-center mt-10">
+          <a href="arquivos/Curriculo.pdf" download class="inline-flex items-center bg-white dark:bg-dark-card text-primary-dark dark:text-primary-light border border-primary-dark dark:border-primary-light hover:bg-primary-dark hover:text-white dark:hover:bg-primary-light dark:hover:text-dark font-medium py-3 px-6 rounded-lg transition-colors">
+            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" /></svg>
+            Baixar Currículo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg-light dark:gradient-bg-dark text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <a href="#" class="text-2xl font-bold">DPS<span class="text-blue-300">.</span></a>
+            <p class="text-blue-200 mt-2">Líder Técnico & Desenvolvedor Full-Stack</p>
+          </div>
+
+          <div class="flex space-x-6">
+            <a href="https://www.linkedin.com/in/diegopintosousa/" target="_blank" class="text-white hover:text-blue-200 transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/diego__davies/" target="_blank" class="text-white hover:text-blue-200 transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <hr class="border-blue-800 dark:border-blue-900 my-6">
+
+        <div class="text-center text-blue-200">
+          <img src="imagens/Logo_branco_corrido_eps.png" alt="Logo Studio Diego Sousa" class="logo logo-dark" loading="lazy" height="35" />
+          <p>© 2025 Diego Pinto de Sousa. Todos os direitos reservados.</p>
+        </div>
       </div>
     </footer>
 
